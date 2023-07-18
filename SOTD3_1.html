@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> script of the day week 3 number one</title>
+    <body>
+        <h1> Guess my number</h1>
+        <script>
+            // creates a secert number for the user to guess.
+            let secertNumber = Math.floor(Math.random()*5) +1
+            // hold the number that the users guesses
+           let userGuess = prompt("Guess my secert Number")
+            // compares the users guess to the secert number
+            if(userGuess ===secertNumber){
+                 // if the user gueses correctly then they are told they guessed right 
+                alert("You have guessed right")
+            }else {
+                // if they do not guess right then they are told the secert number. 
+                alert(`You did not guess the secert number. The secert number was ${secertNumber}`)
+            }
+        </script>
+    </body>
+</html>
